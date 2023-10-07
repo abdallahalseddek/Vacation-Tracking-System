@@ -53,10 +53,10 @@
 12. The System home page lists the manager’s own vacation time requests and outstanding balances but also has a separate section listing requests pending approval by subordinate employees <b>The manager selects each of these one at a time to individually approve or deny.
 
 <p align="center">
-    <img src="./src/main/resources/img/request_validation_flow.png">
+    <img src="img/request_validation_flow.png">
 </p>
 <p style="text-align: center">A Communication Diagram Describing a Request Validation Collaborationt</p>
 <p align="center">
-    <img src="./src/main/resources/img/DB_Design.png">
+    <img src="img/DB_Design.png">
 </p>
 <p style="text-align: center">Data-Base Design</p>
