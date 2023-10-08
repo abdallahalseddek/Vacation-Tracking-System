@@ -51,14 +51,13 @@
 10. The manager responds to the e-mail by clicking on a link embedded in the e-mail or by explicitly logging into the System
 11. The manager may be required to supply the necessary authentication credentials to gain access
 12. The System home page lists the manager’s own vacation time requests and outstanding balances but also has a separate section listing requests pending approval by subordinate employees <b>The manager selects each of these one at a time to individually approve or deny.
-
-<p align="center">
+<!--
+ <p align="center">
     <img src="img/request_validation_flow.png">
 </p>
 <p style="text-align: center">A Communication Diagram Describing a Request Validation Collaborationt</p>
-
- 
-### Here's a high-level database design for the system:
+-->
+### High-level Database Design for the system:
 
 * Employee Table:[ EmployeeID (PK), FirstName, LastName, Email, Password, Role (Employee, Manager, HR Clerk, System Admin) ]
 * Manager Table: [ ManagerID (PK), EmployeeID (FK) ]
