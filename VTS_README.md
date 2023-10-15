@@ -8,6 +8,7 @@
    - [Flow Diagrams](#flow-digrams)
    - [State Diagram](#state-diagram)
    - [Sequence Diagram ](#sequence-diagram)
+- [Manage Time Use Case Pseudo Code in plain text](/psuedo%20code%20task.txt)
 
 ## System goal : The system has the potential to save time and money mostly in the HR department
 > We will take the rules from the Human Resources department, establish a system based on them, and the HR employee will be responsible for entering and updating the employees' vacation times and dates in the system

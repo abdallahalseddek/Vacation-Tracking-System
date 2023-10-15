@@ -1,0 +1,52 @@
+                      #Create a new Vacation Request Use Case#
+
+function homePage(employee):
+  if isEmployeeAuthenticated(employee):
+    if isEmployeeAuthorizedAsManger(employee):
+        listAllPendingRequestsAuthorizedToThisManager().
+    else:
+        return employee_balance.
+
+function newRequest(employee, start_date, end_date, category_name):
+  if isEmployeeValid(employee) and if isValidDateRange(start_date, end_date) and if isValidCategory(category_name):
+       if isEmployeeBalanceIsSufficient(employee, start_date, end_date, category_name):
+           vacationRequest = createVacationRequest(employee, start_date, end_date, category_name)
+           updateVacationRequestStatusToPending(vacationRequest)
+           sendEmailToManagerAndAddRequestToManagerPendingList(vacationRequest)
+           return "Vacation request submitted and pending approval."
+       else :
+           return : "Insufficient vacation balance."
+  else :
+       return : "Invalid input data"
+       redisplayedRequestPageWithErrorsHighlighted();
+
+function vacationResponse(vacationRequest):
+  if ManagerIsAuthorizedToResponseToThisManagerRequest(manager_credentials, vacation_request):
+      if ManagerApprovesRequest(vacation_request.employee, vacation_request.start_date, vacation_request.end_date):
+          updateRequestStatusAsApproved(vacation_request.Status)
+      else :
+          updateRequestStatusAsRejected(vacation_request.Status)
+          RejectExplanationMessage(message)
+      sendEmailToEmployeeByUpdatedStatus(vacation_request)
+  else :
+     return : "you are not authorized"
+========================================================================================
+                         #cancel an approved request#
+
+function cancelApprovedRequest(employee):
+    if isValidEmployee(employee):
+        showVacationRequestsSummary(employee)
+        chooseRequestToCancel()
+        if chosenRequestInFuture(vacation_request):
+            return : "confirm the cancellation"
+        else :
+            shortMessageExplanation(message).
+            return : "confirm the cancellation"
+        if employeeApproveCancellation(vacation_request):
+            updateRequestStatusToCancel(vacation_request).
+            NotifyManagerByEmail(vacation_request).
+            returnVacationTimeToEmployeeRequest(employee, vacation_request).
+            displayHomePageWithUpdatedRequestsStatus(employee).
+        else :
+            effectNoChangesToCurrentRequests()
+
