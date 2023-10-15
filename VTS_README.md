@@ -1,9 +1,18 @@
 # Vacation Tracking System
-## System Idea :
-### The system has the potential to save time and money mostly in the HR department
-### هناخد القواعد من قسم الموارد البشرية نأسس عليها النظام وموظف الموارد البشرية هيبقي مسئول عن ادخال وتحديث اوقات وتواريخ الاجازات للموظفين علي النظام
+## The Vacation Sysytem Idea is presented in Onject Oroentd Analysis And Design textbook, 3th edition. </b> I worked in designing the system work flow and defining it's use cases in details including Flow Diagram,State diagram, ERD Diagram. Also, I
+## Index
+- [System Features](#system-features)
+- [All Possible Use Cases](#use-cases)
+- [Manage Time Use Case Details](#manage-time-use-case)
+   - [DataBase Design & Implemntation ](#high-level-database-design-for-the-system)
+   - [Flow Diagrams](#flow-digrams)
+   - [State Diagram](#state-diagram)
+   - [Sequence Diagram ](#sequence-diagram)
+
+## System goal : The system has the potential to save time and money mostly in the HR department
+> We will take the rules from the Human Resources department, establish a system based on them, and the HR employee will be responsible for entering and updating the employees' vacation times and dates in the system
 ## system features :
-1. Impl flexible rules for validating and verifying leave time requests.
+1. Implementation flexible rules for validating and verifying leave time requests.
 2. Enable manager approval.
 3. Provide access for the previous 12 months and the next 6 Months.
 4. Use email notification to notify the manager when a new request and the employee after response.
@@ -25,17 +34,19 @@
 4. System Admin
    1. Back-Up System Logs
 
-### Use Case Scenarios :
-1. Manage Time [create new Request, Edit pending request, withdraw request, cancel Approved Request]
-2. Award Time
-3. Edit Employee Record
-4. Manage Locations
-5. Manage Leave categories
-6. Override Leave records
-7. Backup system Logs
+### Use Cases :
 
+- [x] Manage Time [create new Request, Edit pending request, withdraw request, cancel Approved Request]
+- [ ] Award Time
+- [ ] Edit Employee Record
+- [ ] Manage Locations
+- [ ] Manage Leave categories
+- [ ] Override Leave records
+- [ ] Backup system Logs
+
+## Manage Time Use Case 
 ### Main flow:
-#### preconditions: The employee is authenticated to access  the vacation System with privileges to manage his vacation dashboard
+#### **preconditions** : The employee is authenticated to access  the vacation System with privileges to manage his vacation dashboard
 1. The employee clicks on the link to access the vacation system.
 2. The system uses Employee credentials to look up the current status of the employee's previous 12M and the next 6 months' vacations
 3. The employee chooses to create a new vacation request.
@@ -51,14 +62,13 @@
 10. The manager responds to the e-mail by clicking on a link embedded in the e-mail or by explicitly logging into the System
 11. The manager may be required to supply the necessary authentication credentials to gain access
 12. The System home page lists the manager’s own vacation time requests and outstanding balances but also has a separate section listing requests pending approval by subordinate employees <b>The manager selects each of these one at a time to individually approve or deny.
-<!--
+
  <p align="center">
     <img src="img/request_validation_flow.png">
 </p>
 <p style="text-align: center">A Communication Diagram Describing a Request Validation Collaborationt</p>
--->
-### High-level Database Design for the system:
 
+### High-level Database Design for the system:
 * Employee Table:[ EmployeeID (PK), FirstName, LastName, Email, Password, Role (Employee, Manager, HR Clerk, System Admin) ]
 * Manager Table: [ ManagerID (PK), EmployeeID (FK) ]
 * HR Clerk Table:[ HRClerkID (PK), EmployeeID (FK) ]
@@ -67,10 +77,11 @@
 * VacationRequest Table:[RequestID (PK), EmployeeID (FK), CategoryID (FK), LocationID (FK), StartDate, EndDate, StartTime, EndTime, Title, Description, Status (Pending, Approved, Denied), ManagerID (FK) ]
 * OverrideLog Table: [ LogID (PK), Action (e.g., Edit Employee Record, Override Leave Record), EmployeeID (FK), Timestamp, Description ]
 * SystemLog Table: [LogID (PK), Action (e.g., Backup System Logs), AdminID (FK referencing Employee Table), Timestamp, Description ]
+
 <p align="center">
     <img src="img/DB_Design.png">
 </p>
-<p style="text-align: center">Data-Base Design</p>
+<p style="text-align: center">Data-Base Digram</p>
 
 #### Now, let's explain how these tables are used in the context of the system's use cases:
 * The Employee Table stores employee information, including their roles (Employee, Manager, HR Clerk, System Admin).
@@ -80,3 +91,26 @@
 * The VacationRequest Table is the core table for tracking vacation requests. It includes details about the request, such as start and end dates, times, and status. It also references the employee making the request and, if applicable, the manager who approved it.
 * The OverrideLog Table logs any actions where HR or System Admin overrides leave records.
 * The SystemLog Table logs system-level actions like backups performed by the System Admin.
+
+<p align="center"> 
+<img src="img/DB_ERD_Details.png"> </p>
+
+## Flow Diagrams 
+> Here is the Flow Digrams for the Main Flow and the other alternative flows
+
+<p align="center"> 
+<img src="img/actors_flow.png"> </p>
+<p style="text-align: center">System Actors Flow</p>
+
+## State Diagram
+
+<p align="center"> 
+<img src="img/state_digram.png"> </p>
+<p style="text-align: center">State Machine Diagram</p>
+
+## Sequence Diagram 
+
+<p align="center"> 
+<img src="img/sequence_digram.png"> </p>
+<p style="text-align: center"> Main and alternative Flow Sequence Diagram for</p>
+
