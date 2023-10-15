@@ -1,19 +1,19 @@
 # Vacation Tracking System
-## The Vacation Sysytem Idea is presented in Onject Oroentd Analysis And Design textbook, 3th edition. </b> I worked in designing the system work flow and defining it's use cases in details including Flow Diagram,State diagram, ERD Diagram. Also, I
+## The Vacation Sysytem Idea is presented in the [Object Oriented Analysis And Design textbook, 3rd edition](https://www.oreilly.com/library/view/object-oriented-analysis-and/9780201895513/). </b> I worked on designing the system workflow and defining its use cases in detail including Flow diagrams, State diagrams, and ERD diagrams. Also, I
 ## Index
 - [System Features](#system-features)
 - [All Possible Use Cases](#use-cases)
 - [Manage Time Use Case Details](#manage-time-use-case)
-   - [DataBase Design & Implemntation ](#high-level-database-design-for-the-system)
+   - [Database Design & Implementation ](#high-level-database-design-for-the-system)
    - [Flow Diagrams](#flow-digrams)
    - [State Diagram](#state-diagram)
    - [Sequence Diagram ](#sequence-diagram)
 - [Manage Time Use Case Pseudo Code in plain text](/psuedo%20code%20task.txt)
 
-## System goal : The system has the potential to save time and money mostly in the HR department
-> We will take the rules from the Human Resources department, establish a system based on them, and the HR employee will be responsible for entering and updating the employees' vacation times and dates in the system
+## System goal: The system has the potential to save time and money mostly in the HR department
+> We will take the rules from the Human Resources department, and establish a system based on them, and the HR employee will be responsible for entering and updating the employees' vacation times and dates in the system
 ## system features :
-1. Implementation flexible rules for validating and verifying leave time requests.
+1. Implementation of flexible rules for validating and verifying leave time requests.
 2. Enable manager approval.
 3. Provide access for the previous 12 months and the next 6 Months.
 4. Use email notification to notify the manager when a new request and the employee after response.
@@ -47,7 +47,7 @@
 
 ## Manage Time Use Case 
 ### Main flow:
-#### **preconditions** : The employee is authenticated to access  the vacation System with privileges to manage his vacation dashboard
+#### **preconditions**: The employee is authenticated to access  the vacation System with privileges to manage his vacation dashboard
 1. The employee clicks on the link to access the vacation system.
 2. The system uses Employee credentials to look up the current status of the employee's previous 12M and the next 6 months' vacations
 3. The employee chooses to create a new vacation request.
@@ -113,5 +113,10 @@
 
 <p align="center"> 
 <img src="img/sequence_digram.png"> </p>
-<p style="text-align: center"> Main and alternative Flow Sequence Diagram for</p>
+<p style="text-align: center"> Main and alternative Flow Sequence Diagram for </p>
 
+## Tools
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Plant UML](https://plantuml.com/)
+- [Excali Draw](https://excalidraw.com/)
+- [DB Diagram](https://dbdiagram.io/)
