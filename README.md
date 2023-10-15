@@ -112,5 +112,10 @@
 
 <p align="center"> 
 <img src="img/sequence_digram.png"> </p>
-<p style="text-align: center"> Main and alternative Flow Sequence Diagram for</p>
+<p style="text-align: center"> Main and alternative Flow Sequence Diagram for </p>
 
+## Tools
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Plant UML](https://plantuml.com/)
+- [Excali Draw](https://excalidraw.com/)
+- [DB Diagram](https://dbdiagram.io/)
