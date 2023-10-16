@@ -8,7 +8,7 @@
    - [Flow Diagrams](#flow-diagrams)
    - [State Diagram](#state-diagram)
    - [Sequence Diagram ](#sequence-diagram)
-   - [Pseudo Code in plain text](/psuedo%20code%20task.txt)
+   - [Pseudo Code in plain text](/psuedo%20code.txt)
 - [The Tools which I used In the project](#tools)
 
 ## System goal: The system has the potential to save time and money mostly in the HR department
