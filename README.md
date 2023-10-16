@@ -5,14 +5,15 @@
 - [All Possible Use Cases](#use-cases)
 - [Manage Time Use Case Details](#manage-time-use-case)
    - [Database Design & Implementation ](#high-level-database-design-for-the-system)
-   - [Flow Diagrams](#flow-digrams)
+   - [Flow Diagrams](#flow-diagrams)
    - [State Diagram](#state-diagram)
    - [Sequence Diagram ](#sequence-diagram)
    - [Pseudo Code in plain text](/psuedo%20code%20task.txt)
+- [The Tools which I used In the project](#tools)
 
 ## System goal: The system has the potential to save time and money mostly in the HR department
 > We will take the rules from the Human Resources department, and establish a system based on them, and the HR employee will be responsible for entering and updating the employees' vacation times and dates in the system
-## system features :
+## system features
 1. Implementation of flexible rules for validating and verifying leave time requests.
 2. Enable manager approval.
 3. Provide access for the previous 12 months and the next 6 Months.
@@ -35,7 +36,7 @@
 4. System Admin
    1. Back-Up System Logs
 
-### Use Cases :
+### Use Cases
 
 - [x] Manage Time [create new Request, Edit pending request, withdraw request, cancel Approved Request]
 - [ ] Award Time
