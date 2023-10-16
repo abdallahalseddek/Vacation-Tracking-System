@@ -13,14 +13,25 @@
 
 ## System goal: The system has the potential to save time and money mostly in the HR department
 > We will take the rules from the Human Resources department, and establish a system based on them, and the HR employee will be responsible for entering and updating the employees' vacation times and dates in the system
-## system features
+## System features
 1. Implementation of flexible rules for validating and verifying leave time requests.
 2. Enable manager approval.
 3. Provide access for the previous 12 months and the next 6 Months.
 4. Use email notification to notify the manager when a new request and the employee after response.
-5. Enable the HR and System Admin to override all actions restricted by rules with logging of those overrides.
-6. Allow managers to directly award personal leave time with system limits.
+5. Enable the HR and System Admin to override all actions restricted by rules by logging those overrides.
+6. Allow managers to award personal leave time with system limits directly.
 7. provide a UI to give the employee a vacation request summary.
+
+### Use Cases
+
+- [x] Manage Time [create new Request, Edit pending request, withdraw request, cancel Approved Request]
+- [ ] Award Time
+- [ ] Edit Employee Record
+- [ ] Manage Locations
+- [ ] Manage Leave categories
+- [ ] Override Leave records
+- [ ] Backup system Logs
+
 
 ### Use Case Actors:
 1. Employee 
@@ -36,15 +47,7 @@
 4. System Admin
    1. Back-Up System Logs
 
-### Use Cases
 
-- [x] Manage Time [create new Request, Edit pending request, withdraw request, cancel Approved Request]
-- [ ] Award Time
-- [ ] Edit Employee Record
-- [ ] Manage Locations
-- [ ] Manage Leave categories
-- [ ] Override Leave records
-- [ ] Backup system Logs
 
 ## Manage Time Use Case 
 ### Main flow:
