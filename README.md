@@ -71,7 +71,7 @@
  <p align="center">
     <img src="img/request_validation_flow.png">
 </p>
-<p style="text-align: center">A Communication Diagram Describing a Request Validation Collaborationt</p>
+<h3 align="center">A Communication Diagram Describing a Request Validation Collaborationt</h3>
 
 ### High-level Database Design for the system:
 * Employee Table:[ EmployeeID (PK), FirstName, LastName, Email, Password, Role (Employee, Manager, HR Clerk, System Admin) ]
@@ -86,7 +86,7 @@
 <p align="center">
     <img src="img/DB_Design.png">
 </p>
-<p style="text-align: center">Data-Base Digram</p>
+<h3 align="center">Data-Base Digram</h3>
 
 #### Now, let's explain how these tables are used in the context of the system's use cases:
 * The Employee Table stores employee information, including their roles (Employee, Manager, HR Clerk, System Admin).
@@ -100,24 +100,27 @@
 <p align="center"> 
 <img src="img/DB_ERD_Details.png"> </p>
 
+
 ## Flow Diagrams 
 > Here is the Flow Digrams for the Main Flow and the other alternative flows
 
 <p align="center"> 
 <img src="img/actors_flow.png"> </p>
-<p style="text-align: center">System Actors Flow</p>
+<h3 align="center">System Actors Flow</h3>
 
 ## State Diagram
 
 <p align="center"> 
 <img src="img/state_digram.png"> </p>
-<p style="text-align: center">State Machine Diagram</p>
+<h3 align="center">State Machine Diagram</h3>
+
 
 ## Sequence Diagram 
 
 <p align="center"> 
 <img src="img/sequence_digram.png"> </p>
-<p style="text-align: center"> Main and alternative Flow Sequence Diagram for </p>
+<h3 align="center">Sequence Diagram for the Main and alternative Flows</h3>
+
 
 ## Tools
 - [Visual Studio Code](https://code.visualstudio.com/)
