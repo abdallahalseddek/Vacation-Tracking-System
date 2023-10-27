@@ -1,5 +1,5 @@
 # Vacation Tracking System
-### The Vacation Sysytem Idea is presented in the [Object Oriented Analysis And Design textbook, 3rd edition](https://www.oreilly.com/library/view/object-oriented-analysis-and/9780201895513/). </b> I worked on designing the system workflow and defining its use cases in detail including Flow diagrams, State diagrams, and ERD diagrams. Also, I
+### The Vacation Sysytem Idea is presented in the [Object Oriented Analysis And Design textbook, 3rd edition](https://www.oreilly.com/library/view/object-oriented-analysis-and/9780201895513/). </b> I worked on designing the system workflow and defining its use cases in detail including Flow diagrams, State diagrams, and ERD diagrams.
 ## Index
 - [System Features](#system-features)
 - [All Possible Use Cases](#use-cases)
