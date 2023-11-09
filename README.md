@@ -115,6 +115,9 @@
 <img src="img/sequence_digram.png"> </p>
 <p style="text-align: center"> Main and alternative Flow Sequence Diagram for </p>
 
+If you want to access a good recap overview of what
+I learned in my Object-Oriented-Design journey with the book and my mentor advices,
+I posted [here](Object_Oriented_Analysis_Mentorship_Program.png) a one flow chart page containing all of my learning
 ## Tools
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Plant UML](https://plantuml.com/)
