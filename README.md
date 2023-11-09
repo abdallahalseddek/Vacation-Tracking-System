@@ -1,25 +1,37 @@
 # Vacation Tracking System
-## The Vacation Sysytem Idea is presented in the [Object Oriented Analysis And Design textbook, 3rd edition](https://www.oreilly.com/library/view/object-oriented-analysis-and/9780201895513/). </b> I worked on designing the system workflow and defining its use cases in detail including Flow diagrams, State diagrams, and ERD diagrams. Also, I
+### The Vacation Sysytem Idea is presented in the [Object Oriented Analysis And Design textbook, 3rd edition](https://www.oreilly.com/library/view/object-oriented-analysis-and/9780201895513/). </b> I worked on designing the system workflow and defining its use cases in detail including Flow diagrams, State diagrams, and ERD diagrams.
 ## Index
 - [System Features](#system-features)
 - [All Possible Use Cases](#use-cases)
 - [Manage Time Use Case Details](#manage-time-use-case)
    - [Database Design & Implementation ](#high-level-database-design-for-the-system)
-   - [Flow Diagrams](#flow-digrams)
+   - [Flow Diagrams](#flow-diagrams)
    - [State Diagram](#state-diagram)
    - [Sequence Diagram ](#sequence-diagram)
-- [Manage Time Use Case Pseudo Code in plain text](/psuedo%20code%20task.txt)
+   - [Pseudo Code in plain text](/psuedo%20code.txt)
+- [The Tools which I used In the project](#tools)
 
 ## System goal: The system has the potential to save time and money mostly in the HR department
 > We will take the rules from the Human Resources department, and establish a system based on them, and the HR employee will be responsible for entering and updating the employees' vacation times and dates in the system
-## system features :
+## System features
 1. Implementation of flexible rules for validating and verifying leave time requests.
 2. Enable manager approval.
 3. Provide access for the previous 12 months and the next 6 Months.
 4. Use email notification to notify the manager when a new request and the employee after response.
-5. Enable the HR and System Admin to override all actions restricted by rules with logging of those overrides.
-6. Allow managers to directly award personal leave time with system limits.
+5. Enable the HR and System Admin to override all actions restricted by rules by logging those overrides.
+6. Allow managers to award personal leave time with system limits directly.
 7. provide a UI to give the employee a vacation request summary.
+
+### Use Cases
+
+- [x] Manage Time [create new Request, Edit pending request, withdraw request, cancel Approved Request]
+- [ ] Award Time
+- [ ] Edit Employee Record
+- [ ] Manage Locations
+- [ ] Manage Leave categories
+- [ ] Override Leave records
+- [ ] Backup system Logs
+
 
 ### Use Case Actors:
 1. Employee 
@@ -35,15 +47,7 @@
 4. System Admin
    1. Back-Up System Logs
 
-### Use Cases :
 
-- [x] Manage Time [create new Request, Edit pending request, withdraw request, cancel Approved Request]
-- [ ] Award Time
-- [ ] Edit Employee Record
-- [ ] Manage Locations
-- [ ] Manage Leave categories
-- [ ] Override Leave records
-- [ ] Backup system Logs
 
 ## Manage Time Use Case 
 ### Main flow:
@@ -67,7 +71,7 @@
  <p align="center">
     <img src="img/request_validation_flow.png">
 </p>
-<p style="text-align: center">A Communication Diagram Describing a Request Validation Collaborationt</p>
+<h3 align="center">A Communication Diagram Describing a Request Validation Collaborationt</h3>
 
 ### High-level Database Design for the system:
 * Employee Table:[ EmployeeID (PK), FirstName, LastName, Email, Password, Role (Employee, Manager, HR Clerk, System Admin) ]
@@ -82,7 +86,7 @@
 <p align="center">
     <img src="img/DB_Design.png">
 </p>
-<p style="text-align: center">Data-Base Digram</p>
+<h3 align="center">Data-Base Digram</h3>
 
 #### Now, let's explain how these tables are used in the context of the system's use cases:
 * The Employee Table stores employee information, including their roles (Employee, Manager, HR Clerk, System Admin).
@@ -96,24 +100,27 @@
 <p align="center"> 
 <img src="img/DB_ERD_Details.png"> </p>
 
+
 ## Flow Diagrams 
 > Here is the Flow Digrams for the Main Flow and the other alternative flows
 
 <p align="center"> 
 <img src="img/actors_flow.png"> </p>
-<p style="text-align: center">System Actors Flow</p>
+<h3 align="center">System Actors Flow</h3>
 
 ## State Diagram
 
 <p align="center"> 
 <img src="img/state_digram.png"> </p>
-<p style="text-align: center">State Machine Diagram</p>
+<h3 align="center">State Machine Diagram</h3>
+
 
 ## Sequence Diagram 
 
 <p align="center"> 
 <img src="img/sequence_digram.png"> </p>
-<p style="text-align: center"> Main and alternative Flow Sequence Diagram for </p>
+<h3 align="center">Sequence Diagram for the Main and alternative Flows</h3>
+
 
 If you want to access a good recap overview of what
 I learned in my Object-Oriented-Design journey with the book and my mentor advices,
